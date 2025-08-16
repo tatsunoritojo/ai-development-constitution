@@ -1,110 +1,110 @@
 # AI Development Constitution Framework v5.1
 
-A comprehensive framework for building production-ready applications with AI-powered development tools, addressing the unique challenges of AI-assisted coding.
+生成AI開発ツールを使用した本格的なアプリケーション構築のための包括的フレームワーク。AI支援コーディングの特有な課題を解決します。
 
-## 🎯 Purpose
+## 🎯 目的
 
-The AI Development Constitution solves critical challenges in AI-powered application development:
+AI Development Constitutionは、AI駆動アプリケーション開発における重要な課題を解決します：
 
-- **"Unusable Code" Problem**: AI often generates functional but unmaintainable code
-- **Scope Creep**: Projects expand beyond manageable boundaries without proper constraints
-- **Quality Inconsistency**: Lack of systematic quality improvement across development stages
-- **Documentation Debt**: AI development often neglects proper documentation
-- **Constraint Handling**: No established patterns for working within technical and temporal limitations
+- **「使えないコード」問題**: AIは機能するが保守不可能なコードを生成することが多い
+- **スコープクリープ**: 適切な制約なしにプロジェクトが管理可能な境界を超えて拡大する
+- **品質の一貫性不足**: 開発段階全体にわたる体系的な品質改善の欠如
+- **文書化負債**: AI開発では適切な文書化が軽視されがち
+- **制約対応**: 技術的・時間的制限内で作業するための確立されたパターンがない
 
-## 🚀 Key Features
+## 🚀 主要機能
 
-### Core Principles
-- **English-Only Discipline**: Ensures international compatibility and consistency
-- **File Size Limits**: Maximum 500 lines per file, enforced automatically
-- **Single Responsibility**: Each component has one clear, well-defined purpose
-- **Progressive Quality**: Staged quality improvement from emergency to production
+### コア原則
+- **英語専用規律**: 国際的な互換性と一貫性を確保
+- **ファイルサイズ制限**: 1ファイル最大500行、自動的に強制
+- **単一責任**: 各コンポーネントは明確で定義された単一の目的を持つ
+- **段階的品質**: 緊急時から本番まで段階的な品質改善
 
-### Enhanced Framework (v5.1)
-- **Automated Quality Gates**: Quantitative metrics for stage progression
-- **Constraint Resolution Patterns**: Proven strategies for common development constraints
-- **Documentation Integration**: Constitutional compliance tracking in project documentation
+### 拡張フレームワーク (v5.1)
+- **自動化品質ゲート**: 段階進行のための定量的メトリクス
+- **制約解決パターン**: 一般的な開発制約に対する実証済み戦略
+- **文書化統合**: プロジェクト文書における憲法遵守追跡
 
-## 📊 Proven Results
+## 📊 実証済み結果
 
-Real-world validation on a production portfolio site:
-- **100% File Size Compliance**: Reduced 685-line monolith to 8 modules (max 236 lines)
-- **60% Performance Improvement**: Through systematic optimization
-- **95%+ Constitutional Compliance**: Achieved across 22 modules
-- **Zero Technical Debt**: Maintained throughout development process
+本番ポートフォリオサイトでの実世界検証：
+- **100% ファイルサイズ遵守**: 685行のモノリスを8モジュールに削減（最大236行）
+- **60% パフォーマンス改善**: 体系的な最適化による
+- **95%+ 憲法遵守率**: 22モジュール全体で達成
+- **ゼロ技術的負債**: 開発プロセス全体を通じて維持
 
-## 📋 Core Framework Components
+## 📋 コアフレームワーク構成
 
-| Component | Purpose | Status |
+| コンポーネント | 目的 | ステータス |
 |-----------|---------|--------|
-| **[🏛️ AI Development Constitution](./AI_DEVELOPMENT_CONSTITUTION.yaml)** | **CORE PRINCIPLES v5.1** | Production Ready |
-| **[📊 Constitutional Feedback](./CONSTITUTIONAL_FEEDBACK.md)** | Production validation results | Validated |
+| **[🏛️ AI Development Constitution](./AI_DEVELOPMENT_CONSTITUTION.yaml)** | **コア原則 v5.1** | 本番対応 |
+| **[📊 Constitutional Feedback](./CONSTITUTIONAL_FEEDBACK.md)** | 本番検証結果 | 検証済み |
 
-## 🛠️ Quick Start
+## 🛠️ クイックスタート
 
-### 1. Apply the Constitution
+### 1. 憲法の適用
 ```yaml
-# Include AI_DEVELOPMENT_CONSTITUTION.yaml in your project
-# Follow the activation protocol in the constitution
+# プロジェクトにAI_DEVELOPMENT_CONSTITUTION.yamlを含める
+# 憲法のアクティベーションプロトコルに従う
 ```
 
-### 2. Use Progressive Quality Stages
+### 2. 段階的品質ステージの使用
 ```
-Emergency (0-2 hours): Core functionality > 60%
-Systematic (2 hours-1 day): All dimensions > 70%
-Production (1 day-1 week): All dimensions > 90%
-```
-
-### 3. Implement Constraint Resolution
-```
-File Size Constraints:
-- utility_function_modules
-- configuration_externalization
-- event_driven_decomposition
-
-Dependency Management:
-- dependency_injection_via_global_namespace
-- event_bus_for_loose_coupling
-- initialization_sequence_validation
+緊急時 (0-2時間): コア機能 > 60%
+体系的 (2時間-1日): 全次元 > 70%
+本番 (1日-1週間): 全次元 > 90%
 ```
 
-## 🎯 Use Cases
+### 3. 制約解決の実装
+```
+ファイルサイズ制約:
+- ユーティリティ関数モジュール
+- 設定の外部化
+- イベント駆動分解
 
-### Perfect For:
-- **AI-Assisted Development**: Claude, ChatGPT, Copilot projects
-- **Rapid Prototyping**: Time-constrained development cycles
-- **Legacy Modernization**: Systematic refactoring of existing codebases
-- **Team Standardization**: Consistent quality across AI-human collaboration
+依存関係管理:
+- グローバル名前空間による依存性注入
+- 疎結合のためのイベントバス
+- 初期化シーケンス検証
+```
 
-### Validated On:
-- JavaScript/Web applications
-- Modular architecture refactoring
-- Performance optimization projects
-- Documentation-heavy implementations
+## 🎯 使用ケース
 
-## 🤝 Contributing
+### 最適な用途:
+- **AI支援開発**: Claude、ChatGPT、Copilotプロジェクト
+- **迅速プロトタイピング**: 時間制約のある開発サイクル
+- **レガシーモダナイゼーション**: 既存コードベースの体系的リファクタリング
+- **チーム標準化**: AI-人間協業での一貫した品質
 
-This framework evolved through practical application and measurable results. Contributions should:
+### 検証済み対象:
+- JavaScript/Webアプリケーション
+- モジュラーアーキテクチャリファクタリング
+- パフォーマンス最適化プロジェクト
+- 文書化重視の実装
 
-1. **Maintain Core Principles**: English-only, file size limits, single responsibility
-2. **Provide Quantitative Evidence**: Include metrics and real-world validation
-3. **Follow Progressive Quality**: Emergency → Systematic → Production stages
+## 🤝 コントリビューション
 
-## 📈 Roadmap
+このフレームワークは実際の適用と測定可能な結果を通じて進化しました。コントリビューションは以下を満たすべきです：
 
-- **v5.2**: Cross-language support (Python, TypeScript, Go)
-- **v6.0**: Enterprise integration patterns
-- **Tooling**: IDE plugins and CI/CD integrations
+1. **コア原則の維持**: 英語専用、ファイルサイズ制限、単一責任
+2. **定量的証拠の提供**: メトリクスと実世界での検証を含める
+3. **段階的品質の遵守**: 緊急時 → 体系的 → 本番ステージ
 
-## 📄 License
+## 📈 ロードマップ
+
+- **v5.2**: クロス言語サポート（Python、TypeScript、Go）
+- **v6.0**: エンタープライズ統合パターン
+- **ツール**: IDEプラグインとCI/CD統合
+
+## 📄 ライセンス
 
 MIT License
 
-## 🔗 Support
+## 🔗 サポート
 
-- **Issues**: Report bugs and feature requests via GitHub Issues
-- **Discussions**: Share your implementation experiences
+- **Issues**: GitHub Issuesでバグ報告と機能要求
+- **Discussions**: 実装経験の共有
 
 ---
 
-**Built for the era of AI-powered development. Proven in production. Ready for your next project.**
+**AI駆動開発の時代のために構築。本番で実証済み。あなたの次のプロジェクトに対応。**
