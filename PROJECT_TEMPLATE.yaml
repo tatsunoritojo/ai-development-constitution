@@ -1,0 +1,120 @@
+# PROJECT TEMPLATE v2.0
+# Simplified Constitutional Framework Integration Template
+# Purpose: Rapid project setup with constitutional compliance
+
+template_meta:
+  version: "2.0"
+  constitutional_compliance: "v5.0"
+  creation_date: "2025-01-15"
+  purpose: "Streamlined project development template"
+
+# ===== PROJECT SPECIFICATION =====
+project_specification:
+  project_identity:
+    name: ""  # Project name
+    purpose: ""  # Single sentence project purpose
+    target_users: ""  # Primary user demographic
+    
+  functional_requirements:
+    primary_features: []  # Core features
+    secondary_features: []  # Future phase features
+    user_workflows: []  # Key interaction patterns
+    
+  technical_constraints:
+    platform_requirements: ""  # Target platforms
+    performance_requirements: ""  # Response time, throughput
+    external_dependencies: []  # Required services, APIs, libraries
+
+# ===== ARCHITECTURE DESIGN =====
+architecture_design:
+  constitutional_compliance:
+    file_size_limits:
+      max_lines: 500
+      split_trigger: 400
+    english_only_code: true
+    single_responsibility: true
+    
+  component_structure:
+    core_components: []
+      # - component_name:
+      #     responsibility: ""
+      #     max_size_lines: 300
+    utility_components: []
+    integration_components: []
+    
+  quality_strategy:
+    emergency_stage:
+      functional_threshold: 0.6
+      focus: "Basic functionality working"
+    systematic_stage:
+      functional_threshold: 0.8
+      focus: "Architecture compliance and testing"
+    production_stage:
+      functional_threshold: 0.9
+      focus: "Performance optimization and polish"
+
+# ===== IMPLEMENTATION GUIDANCE =====
+implementation_guidance:
+  methodology_selection:
+    simple_features: "rapid_iteration"
+    complex_features: "systematic_approach"
+    critical_features: "test_driven_development"
+    
+  compliance_checkpoints:
+    before_feature:
+      - "verify component responsibility alignment"
+      - "check file size impact"
+    during_implementation:
+      - "monitor code quality metrics"
+      - "enforce English-only discipline"
+    after_completion:
+      - "verify constitutional compliance"
+      - "update documentation"
+
+# ===== COLLABORATION FRAMEWORK =====
+collaboration_framework:
+  capability_boundaries:
+    high_confidence_areas: []  # Technologies AI handles well
+    medium_confidence_areas: []  # Require attention
+    low_confidence_areas: []  # Recommend human collaboration
+    
+  collaboration_triggers:
+    architectural_decisions: "when system design complexity exceeds AI capability"
+    performance_optimization: "when specialized domain knowledge required"
+    user_interface_design: "when UX research needed"
+
+# ===== HANDOFF DOCUMENTATION =====
+handoff_framework:
+  status_tracking:
+    completed_components: []
+    partial_components: []
+    pending_components: []
+    
+  decision_records:
+    major_decisions: []
+    constraint_adaptations: []
+    
+  continuation_guidance:
+    immediate_priorities: []
+    technical_debt_items: []
+    recommended_methodology: ""
+    collaboration_recommendations: []
+
+# ===== USAGE INSTRUCTIONS =====
+usage_instructions:
+  setup_phase:
+    - "Fill project_specification section before coding"
+    - "Define component structure and quality thresholds"
+    
+  development_phase:
+    - "Use methodology_selection for feature complexity"
+    - "Apply compliance_checkpoints throughout development"
+    
+  handoff_phase:
+    - "Update status_tracking as components complete"
+    - "Document decisions and provide continuation guidance"
+    
+  constitutional_integration:
+    - "Always enforce English-only code discipline"
+    - "Maintain file size limits throughout development"
+    - "Apply progressive quality convergence"
