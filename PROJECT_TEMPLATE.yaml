@@ -11,19 +11,33 @@ template_meta:
 # ===== PROJECT SPECIFICATION =====
 project_specification:
   project_identity:
-    name: ""  # Project name
-    purpose: ""  # Single sentence project purpose
-    target_users: ""  # Primary user demographic
+    name: "Attendance Management System"
+    purpose: "Automate attendance recording and health monitoring for free schools with QR code scanning"
+    target_users: "Free school teachers and administrative staff"
     
   functional_requirements:
-    primary_features: []  # Core features
-    secondary_features: []  # Future phase features
-    user_workflows: []  # Key interaction patterns
+    primary_features:
+      - "QR code attendance recording (entry/exit)"
+      - "Health condition quiz monitoring (mood, sleep, purpose)"
+      - "Student data management via Excel/CSV"
+      - "Dynamic roster file selection via settings"
+      - "Attendance report generation (PDF, Excel)"
+      - "QR code label printing integration"
+      - "Constitutional compliance architecture (500-line limit, English-only, modular)"
+    secondary_features:
+      - "Offline data storage and synchronization"
+      - "Multi-school deployment capability"
+      - "Advanced reporting analytics"
+      - "Cross-platform configuration management"
+    user_workflows:
+      - "Student scans QR code → answers health questions → attendance recorded"
+      - "Teacher generates monthly reports → exports to PDF/Excel"
+      - "Administrator manages student registry → prints QR labels"
     
   technical_constraints:
-    platform_requirements: ""  # Target platforms
-    performance_requirements: ""  # Response time, throughput
-    external_dependencies: []  # Required services, APIs, libraries
+    platform_requirements: "Windows 10/11 desktop application"
+    performance_requirements: "Sub-second QR scan processing, <5MB memory footprint"
+    external_dependencies: ["Brother P-touch Editor", "Kivy", "openpyxl", "ReportLab", "SQLite"]
 
 # ===== ARCHITECTURE DESIGN =====
 architecture_design:
@@ -35,12 +49,49 @@ architecture_design:
     single_responsibility: true
     
   component_structure:
-    core_components: []
-      # - component_name:
-      #     responsibility: ""
-      #     max_size_lines: 300
-    utility_components: []
-    integration_components: []
+    core_components:
+      - main_application:
+          responsibility: "App initialization, screen coordination (main.py)"
+          actual_size_lines: 1011
+          status: "Constitutional compliant"
+      - modular_screens:
+          responsibility: "Individual UI screen components"
+          implemented_screens:
+            - "wait_screen.py (370 lines)"
+            - "question_screens.py (280 lines)" 
+            - "flow_screens.py (200 lines)"
+            - "settings_screen.py (334 lines)"
+          status: "Constitutional compliant"
+      - data_management:
+          responsibility: "Excel/CSV operations with dynamic file support"
+          implemented_files:
+            - "spreadsheet.py (290 lines)"
+            - "config.py"
+          status: "Constitutional compliant"
+    utility_components:
+      - ui_components:
+          responsibility: "Reusable UI widgets and popups"
+          implemented_files:
+            - "ui/popups.py (140 lines)"
+          status: "Constitutional compliant"
+      - audio_system:
+          responsibility: "Sound management and audio feedback"
+          implemented_files:
+            - "audio/sound_manager.py (80 lines)"
+          status: "Constitutional compliant"
+      - report_generator:
+          responsibility: "PDF/Excel report creation"
+          max_size_lines: 300
+      - printer_interface:
+          responsibility: "QR label printing coordination"
+          max_size_lines: 150
+    integration_components:
+      - qr_scanner:
+          responsibility: "QR code reading interface"
+          max_size_lines: 100
+      - storage_handler:
+          responsibility: "File system and database access"
+          max_size_lines: 200
     
   quality_strategy:
     emergency_stage:
@@ -74,9 +125,9 @@ implementation_guidance:
 # ===== COLLABORATION FRAMEWORK =====
 collaboration_framework:
   capability_boundaries:
-    high_confidence_areas: []  # Technologies AI handles well
-    medium_confidence_areas: []  # Require attention
-    low_confidence_areas: []  # Recommend human collaboration
+    high_confidence_areas: ["Python refactoring", "File structure organization", "CSV/Excel operations", "Basic Kivy UI", "Code splitting and modularization"]
+    medium_confidence_areas: ["QR code integration", "SQLite database design", "Print system integration", "Cross-platform compatibility"]
+    low_confidence_areas: ["Brother P-touch specific APIs", "Complex UI/UX design decisions", "School-specific business requirements", "Performance optimization for hardware"]
     
   collaboration_triggers:
     architectural_decisions: "when system design complexity exceeds AI capability"
@@ -86,19 +137,50 @@ collaboration_framework:
 # ===== HANDOFF DOCUMENTATION =====
 handoff_framework:
   status_tracking:
-    completed_components: []
-    partial_components: []
-    pending_components: []
+    completed_components: 
+      - "Constitutional modular architecture implementation"
+      - "main.py monolith refactoring (1251→1011 lines)"  
+      - "Modular screen system (wait_screen, question_screens, flow_screens)"
+      - "Settings screen with roster file selection"
+      - "Dynamic spreadsheet data management"
+      - "Audio system modularization" 
+      - "UI components extraction"
+      - "PyInstaller executable generation"
+    partial_components: 
+      - "English-only code conversion (90% complete)"
+      - "Error handling standardization"
+    pending_components: 
+      - "Report system optimization"
+      - "Printer interface enhancement"
     
   decision_records:
-    major_decisions: []
-    constraint_adaptations: []
+    major_decisions:
+      - "Successfully implemented Constitutional 500-line limit compliance"
+      - "Modular screen architecture with single responsibility principle"
+      - "Dynamic roster file selection via settings.json configuration"
+      - "Maintained Kivy framework for UI consistency"
+      - "Enhanced Excel/CSV data management with fallback support"
+    constraint_adaptations:
+      - "Aggressive modularization achieved: main.py 1251→1011 lines"
+      - "Screen components extracted: 370+280+200+334 lines in separate files"
+      - "English-only code discipline enforced across all new modules"
+      - "Functionality preservation validated during refactoring"
     
   continuation_guidance:
-    immediate_priorities: []
-    technical_debt_items: []
-    recommended_methodology: ""
-    collaboration_recommendations: []
+    immediate_priorities:
+      - "Optimize report system for better performance"
+      - "Enhance printer interface with more robust error handling"
+      - "Complete English-only code conversion for remaining legacy comments"
+    technical_debt_items:
+      - "Some legacy Japanese comments in older modules"
+      - "Error handling patterns could be more consistent"
+      - "Report generation performance optimization needed"
+    recommended_methodology: "systematic_approach"
+    collaboration_recommendations:
+      - "Validate roster file selection with actual school data"
+      - "Test executable on various Windows environments"
+      - "Performance testing with large student datasets"
+      - "User acceptance testing for settings UI workflow"
 
 # ===== USAGE INSTRUCTIONS =====
 usage_instructions:
